@@ -16,15 +16,15 @@ Variables
   --primary-800: #333333;
   --primary-900: #191919;
 
-  --red-100: ##ffcccc;
-  --red-200: ##ffb3b3;
-  --red-300: ###ff9999;
+  --red-100: #ffcccc;
+  --red-200: #ffb3b3;
+  --red-300: #ff9999;
   --red-400: #ff3333;
-  --red-500: ##ff1919;
+  --red-500: #ff1919;
   --red-600: #e60000;
   --red-700: #cc0000;
-  --red-800: ##990000;
-  --red-900: ##660000;
+  --red-800: #990000;
+  --red-900: #660000;
   --red-999: #4d0000;
 
   /* dark shades of primary color*/
