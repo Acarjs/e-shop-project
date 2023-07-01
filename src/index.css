@@ -27,6 +27,9 @@ Variables
   --red-900: #660000;
   --red-999: #4d0000;
 
+  --green-dark: #00e600;
+  --green-light: #e6ffe6;
+
   /* dark shades of primary color*/
   --clr-primary-1: hsl(24, 2%, 41%);
   --clr-primary-2: hsl(22, 28%, 29%);
