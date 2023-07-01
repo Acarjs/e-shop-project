@@ -86,13 +86,13 @@ const Wrapper = styled.nav`
         margin: 0 0.5rem;
       }
       a {
-        color: var(--primary-800);
+        color: var(--primary-999);
         font-size: 1rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--primary-900);
+          border-bottom: 2px solid var(--primary-999);
         }
       }
     }
