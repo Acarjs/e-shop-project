@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt="Besiktas logo" />
+            <img src={logo} alt="Besiktas Logo" />
           </Link>
           <button type="button" className="nav-toggle">
             <FaBars />
@@ -88,11 +88,15 @@ const Wrapper = styled.nav`
       a {
         color: var(--primary-999);
         font-size: 1rem;
+        font-weight: 700;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
+        transition: var(--transition);
         &:hover {
           border-bottom: 2px solid var(--primary-999);
+          font-size: 1.2rem;
+          font-weight: 800;
         }
       }
     }

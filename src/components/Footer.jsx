@@ -20,10 +20,10 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
   background-image: url(${footerImage});
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--primary-900);
   text-align: center;
@@ -32,7 +32,7 @@ const Wrapper = styled.footer`
   object-fit: fill;
 
   .logo-info {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   p {
@@ -45,6 +45,13 @@ const Wrapper = styled.footer`
   h5 {
     color: var(--primary-0);
     letter-spacing: var(--spacing);
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 

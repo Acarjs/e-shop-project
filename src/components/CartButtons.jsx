@@ -32,6 +32,7 @@ const Wrapper = styled.div`
     letter-spacing: var(--spacing);
     display: flex;
     align-items: center;
+    font-weight: 700;
   }
 
   .cart-container {
@@ -64,12 +65,13 @@ const Wrapper = styled.div`
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-weight: 700;
     justify-content: center;
     gap: 5px;
     background: transparent;
     border-color: transparent;
     font-size: 1.2rem;
-    color: var(--primary-900);
+    color: var(--primary-999);
     letter-spacing: var(--spacing);
   }
 `
