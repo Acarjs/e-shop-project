@@ -1,5 +1,6 @@
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
-import Footer from './Footer'
+import Navbar from './Navbar.jsx'
+import Sidebar from './Sidebar.jsx'
+import Footer from './Footer.jsx'
+import Error from './Error.jsx'
 
-export { Navbar, Sidebar, Footer }
+export { Navbar, Sidebar, Footer, Error }
