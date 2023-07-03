@@ -11,7 +11,7 @@ const Footer = () => {
         <Link to="/">
           <img src={logo} alt="Besiktas Mini-Logo" />
         </Link>
-        <p>Besiktas JK Fan Products</p>
+        <p>Beşiktaş JK Fan Products</p>
       </div>
       <h5>&copy; {new Date().getFullYear()} </h5>
     </Wrapper>

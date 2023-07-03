@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaUserCheck, FaUserTimes, FaShoppingCart } from 'react-icons/fa'
+import { useProductContext } from '../context/product_context'
 import { Link } from 'react-router-dom'
 
 const CartButtons = () => {
+  const data = useProductContext()
+
+  const { closeSidebar } = data
+
   return (
     <Wrapper className="cart-btn-wrapper">
-      <Link to="/cart" className="cart-btn">
+      <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
         Cart
         <span className="cart-container">
           <FaShoppingCart />

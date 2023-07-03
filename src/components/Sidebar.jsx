@@ -6,15 +6,21 @@ import { links } from '../utils/constant.jsx'
 import { Link } from 'react-router-dom/'
 import Footer from './Footer'
 import CartButtons from './CartButtons'
+import { useProductContext } from '../context/product_context'
 
 const Sidebar = () => {
-  const isOpen = false
+  const data = useProductContext()
+
+  const { isSidebarOpen, closeSidebar } = data
+
   return (
     <SidebarWrapper>
-      <aside className={`${isOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
+      <aside
+        className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
+      >
         <div className="sidebar-header">
           <img src={logo} alt="Besiktas Logo" className="logo" />
-          <button type="button" className="close-btn">
+          <button type="button" className="close-btn" onClick={closeSidebar}>
             <AiFillCloseCircle />
           </button>
         </div>
@@ -23,12 +29,16 @@ const Sidebar = () => {
             const { id, text, url } = link
             return (
               <li key={id}>
-                <Link to={url}>{text}</Link>
+                <Link to={url} onClick={closeSidebar}>
+                  {text}
+                </Link>
               </li>
             )
           })}
           <li>
-            <Link to="/checkout">checkout</Link>
+            <Link to="/checkout" onClick={closeSidebar}>
+              checkout
+            </Link>
           </li>
         </ul>
         <CartButtons />
