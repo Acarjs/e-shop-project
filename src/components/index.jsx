@@ -4,7 +4,7 @@ import Contact from './Contact.jsx'
 import Error from './Error.jsx'
 import FeaturedProducts from './FeaturedProducts.jsx'
 import Footer from './Footer.jsx'
-import Services from './Services.jsx'
+import Knowledge from './Knowledge.jsx'
 import Hero from './Hero.jsx'
 
 export {
@@ -13,7 +13,7 @@ export {
   Footer,
   Error,
   Contact,
-  Services,
+  Knowledge,
   Hero,
   FeaturedProducts,
 }

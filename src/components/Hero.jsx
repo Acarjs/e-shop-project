@@ -31,9 +31,22 @@ const Hero = () => {
 }
 
 const Wrapper = styled.section`
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* .img-container {
+    display: none;
+  } */
+
+  .trunk-img {
+    margin: 1.5rem auto;
+    width: 100%;
+  }
+
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 7rem;
     h1 {
@@ -56,12 +69,13 @@ const Wrapper = styled.section`
     .img-container::before {
       content: '';
       position: absolute;
-      width: 15%;
+      width: 11%;
       height: 80%;
       background: var(--primary-999);
-      bottom: 1.2%;
+      bottom: 5.4%;
       left: -10%;
       border-radius: var(--radius);
+      z-index: -1;
     }
 
     .trunk-img {
