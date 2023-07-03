@@ -18,7 +18,7 @@ const ErrorPage = () => {
 
 const Wrapper = styled.main`
   background: var(--primary-400);
-  color: var(--primary-999);
+  color: var(--primary-900);
   display: flex;
   flex-direction: column;
   justify-content: center;
