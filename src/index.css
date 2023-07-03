@@ -211,7 +211,7 @@ p {
 }
 .btn:hover {
   color: var(--primary-100);
-  background: var(--primary-800);
+  background: var(--primary-700);
 }
 .title {
   text-align: center;

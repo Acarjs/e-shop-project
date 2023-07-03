@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     flex-direction: column;
   }
   img {
+    border-radius: var(--radius);
     width: 100%;
     height: 400px;
     margin-top: 2.5rem;
