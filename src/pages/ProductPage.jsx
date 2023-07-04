@@ -7,7 +7,7 @@ const ProductPage = () => {
     <main>
       <PageSection title="products" />
       <Wrapper className="page">
-        <h3>Product Page</h3>
+        <h3>Products Page</h3>
       </Wrapper>
     </main>
   )

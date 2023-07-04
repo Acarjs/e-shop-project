@@ -12,7 +12,7 @@ import {
   PrivateRoute,
   Products,
   SingleProduct,
-} from './pages/index.jsx'
+} from './pages/'
 
 function App() {
   return (
@@ -36,9 +36,7 @@ function App() {
           <Products />
         </Route>
 
-        <Route exact path="/products:id" children={<SingleProduct />}>
-          <Products />
-        </Route>
+        <Route exact path="/products/:id" children={<SingleProduct />}></Route>
 
         <Route exact path="/checkout">
           <Checkout />

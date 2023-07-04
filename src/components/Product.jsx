@@ -42,14 +42,14 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     transition: var(--transition);
     opacity: 0;
     cursor: pointer;
     svg {
-      font-size: 1.25rem;
+      font-size: 2rem;
       color: var(--primary-0);
     }
   }
