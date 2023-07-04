@@ -5,6 +5,7 @@ import Error from './Error.jsx'
 import FeaturedProducts from './FeaturedProducts.jsx'
 import Footer from './Footer.jsx'
 import Knowledge from './Knowledge.jsx'
+import Loading from './Loading.jsx'
 import Hero from './Hero.jsx'
 
 export {
@@ -16,4 +17,5 @@ export {
   Knowledge,
   Hero,
   FeaturedProducts,
+  Loading,
 }

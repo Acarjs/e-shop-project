@@ -34,7 +34,8 @@
       "id": 3,
       "name": "MATCH RED SHIRT",
       "brand": "Adidas",
-      "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-3-a-s.jpeg?alt=media&token=ff60f7a5-449d-4848-baed-b4236923e6ce9",
+      "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-3-a-s.jpeg?alt=media&token=ff60f7a5-449d-4848-baed-b4236923e6ce",
+
       "price": 49,
       "shipping": true,
       "featured": true
