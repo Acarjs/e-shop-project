@@ -44,3 +44,6 @@ export const knowledges = [
 
 export const products_url =
   'https://eshop-97209-default-rtdb.firebaseio.com/products.json'
+
+export const single_product_url =
+  'https://eshop-single-product-default-rtdb.firebaseio.com'
