@@ -44,7 +44,7 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 992px) {
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
     display: flex;
     flex-direction: row;
     align-items: center;

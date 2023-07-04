@@ -41,3 +41,6 @@ export const knowledges = [
     text: "Beşiktaş Jimnastik Kulübü, also known simply as Beşiktaş, is a Turkish professional sports club founded in 1903 that is based in the Beşiktaş district of Istanbul. The club's football team is one of the Big Three in Turkey and one of the most successful teams in the country, having never been relegated to a lower division. It was the first registered sports club in the country and one of the few that acquired the right to bear the Turkish flag on its crest.",
   },
 ]
+
+export const products_url =
+  'https://eshop-97209-default-rtdb.firebaseio.com/products.json'

@@ -20,7 +20,7 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
   background-image: url(${footerImage});
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
