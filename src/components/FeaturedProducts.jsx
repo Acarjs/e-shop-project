@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useProductContext } from '../context/product_context'
+import { useProductsContext } from '../context/product_context'
 import Loading from './Loading.jsx'
 import Error from './Error.jsx'
 import Product from './Product.jsx'
@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
     products_loading: loading,
     products_error: error,
     featured_products: featured,
-  } = useProductContext()
+  } = useProductsContext()
 
   if (loading) {
     return <Loading />
@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
 }
 
 const Wrapper = styled.section`
-  background: var(--clr-grey-10);
+  background: var(--primary-100);
 
   .featured {
     margin: 2rem auto;

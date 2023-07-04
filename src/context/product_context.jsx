@@ -15,7 +15,7 @@ import {
 
 const ProductsContext = createContext()
 
-export const useProductContext = () => useContext(ProductsContext)
+export const useProductsContext = () => useContext(ProductsContext)
 
 const initialState = {
   isSidebarOpen: false,
@@ -68,7 +68,9 @@ export const ProductsProvider = ({ children }) => {
   }, [])
 
   return (
-    <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
+    <ProductsContext.Provider
+      value={{ ...state, openSidebar, closeSidebar, fetchSingleProduct }}
+    >
       {children}
       {/* this is App component */}
     </ProductsContext.Provider>

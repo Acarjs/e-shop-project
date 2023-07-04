@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaUserCheck, FaUserTimes, FaShoppingCart } from 'react-icons/fa'
-import { useProductContext } from '../context/product_context'
+import { useProductsContext } from '../context/product_context'
 import { Link } from 'react-router-dom'
 
 const CartButtons = () => {
-  const data = useProductContext()
+  const data = useProductsContext()
 
   const { closeSidebar } = data
 

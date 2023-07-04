@@ -6,10 +6,10 @@ import { links } from '../utils/constants.jsx'
 import { Link } from 'react-router-dom/'
 import Footer from './Footer'
 import CartButtons from './CartButtons'
-import { useProductContext } from '../context/product_context'
+import { useProductsContext } from '../context/product_context'
 
 const Sidebar = () => {
-  const data = useProductContext()
+  const data = useProductsContext()
 
   const { isSidebarOpen, closeSidebar } = data
 

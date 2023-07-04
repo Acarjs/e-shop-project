@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { links } from '../utils/constants'
 import CartButtons from './CartButtons'
-import { useProductContext } from '../context/product_context'
+import { useProductsContext } from '../context/product_context'
 
 const Navbar = () => {
-  const data = useProductContext()
+  const data = useProductsContext()
 
   const { openSidebar } = data
 

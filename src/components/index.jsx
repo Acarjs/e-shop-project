@@ -7,6 +7,10 @@ import Footer from './Footer.jsx'
 import Knowledge from './Knowledge.jsx'
 import Loading from './Loading.jsx'
 import Hero from './Hero.jsx'
+import ProductImages from './ProductImages.jsx'
+import AddToCart from './AddToCart.jsx'
+import Stars from './Stars.jsx'
+import PageHero from './PageHero.jsx'
 
 export {
   Navbar,
@@ -18,4 +22,8 @@ export {
   Hero,
   FeaturedProducts,
   Loading,
+  ProductImages,
+  AddToCart,
+  Stars,
+  PageHero,
 }
