@@ -16,7 +16,7 @@ const Hero = () => {
           Shine with your style, treat yourself and update your workout gear!
         </p>
         <Link to="/products" className="btn hero-btn">
-          Shop now{' '}
+          Shop now
         </Link>
       </article>
       <article className="img-container">

@@ -10,7 +10,7 @@ import Hero from './Hero.jsx'
 import ProductImages from './ProductImages.jsx'
 import AddToCart from './AddToCart.jsx'
 import Stars from './Stars.jsx'
-import PageHero from './PageHero.jsx'
+import PageSection from './PageSection.jsx'
 
 export {
   Navbar,
@@ -25,5 +25,5 @@ export {
   ProductImages,
   AddToCart,
   Stars,
-  PageHero,
+  PageSection,
 }

@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const PageSection = ({ title }) => {
+const PageSection = ({ title, product }) => {
   return (
     <Wrapper>
       <div>
         <h3 className="section-center">
-          <Link to="/">Home</Link> | {title}
+          <Link to="/">Home |</Link>
+          {product && <Link to="/products">Products |</Link>} {title}
         </h3>
       </div>
     </Wrapper>
@@ -17,7 +18,7 @@ const PageSection = ({ title }) => {
 const Wrapper = styled.section`
   background: var(--red-900);
   width: 100%;
-  min-height: 25vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
