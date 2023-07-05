@@ -3,12 +3,12 @@
     {
       "0": 1,
       "1": 2,
-      "name": "anil"
+      "name": "black"
     }
   ],
   "2": [
     {
-      "name": "acar"
+      "name": "eagle"
     }
   ],
   "products": [
@@ -35,7 +35,6 @@
       "name": "MATCH RED SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-3-a-s.jpeg?alt=media&token=ff60f7a5-449d-4848-baed-b4236923e6ce",
-
       "price": 49,
       "shipping": true,
       "featured": true
@@ -125,7 +124,7 @@
       "name": "WOMAN MATCH WHITE SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-14-a-s.jpeg?alt=media&token=91545fe5-1190-4717-88e0-53c6ea51d2ef",
-      "price": 17,
+      "price": 39,
       "shipping": true
     },
     {
@@ -133,7 +132,7 @@
       "name": "WOMAN MATCH BLACK SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-15-a-s.jpeg?alt=media&token=a63002b7-ac63-4d2f-959f-e000465f66a6",
-      "price": 17,
+      "price": 39,
       "shipping": true
     },
     {
@@ -157,7 +156,7 @@
       "name": "KID BESIKTAS WHITE T-SHIRT",
       "brand": "Mavi",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-18-a-s.jpeg?alt=media&token=9b921f54-1e8f-4421-84ac-71240c6ab81b",
-      "price": 29,
+      "price": 14,
       "shipping": true
     },
     {
@@ -165,7 +164,7 @@
       "name": "KID BESIKTAS BLACK T-SHIRT",
       "brand": "Mavi",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-19-a-s.jpeg?alt=media&token=0d8d51f4-a5fc-4438-96ee-f4320deb1b4e",
-      "price": 29,
+      "price": 19,
       "shipping": true
     },
     {
@@ -173,7 +172,7 @@
       "name": "KID BESIKTAS RED T-SHIRT",
       "brand": "Mavi",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-20-a-s.jpeg?alt=media&token=3a21c8a5-26cc-4f7a-b3ac-a5835be1be8d",
-      "price": 29,
+      "price": 19,
       "shipping": true
     },
     {
@@ -181,16 +180,16 @@
       "name": "BABY BODY ",
       "brand": "Zara",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-21-a-s.jpeg?alt=media&token=a35b32ef-d45e-4563-b196-03e9902a93ce",
-      "price": 19,
-      "shipping": true
+      "price": 9,
+      "shipping": false
     },
     {
       "id": 22,
       "name": "BABY BLACK T-SHIRT ",
       "brand": "Zara",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-22-a-s.jpeg?alt=media&token=0994f19d-46b6-4c04-9c6a-8975d0ad17cf",
-      "price": 14,
-      "shipping": true
+      "price": 9,
+      "shipping": false
     }
   ]
 }
