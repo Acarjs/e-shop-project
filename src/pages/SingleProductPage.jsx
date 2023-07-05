@@ -26,7 +26,7 @@ const SingleProductPage = () => {
 
   useEffect(() => {
     fetchSingleProduct(`${url}/${id}.json`)
-    console.log(product)
+    // console.log(product)
   }, [id])
 
   useEffect(() => {
@@ -45,7 +45,16 @@ const SingleProductPage = () => {
     return <Error />
   }
 
-  const { name, price, stock, stars, reviews, id: sku, brand, images } = product
+  const {
+    name,
+    price,
+    stock,
+    stars,
+    reviews,
+    id: product_id,
+    brand,
+    images,
+  } = product
 
   return (
     <Wrapper>
@@ -70,7 +79,7 @@ const SingleProductPage = () => {
             </p>
             <p className="info">
               <span> Product ID : </span>
-              {sku}
+              {product_id}
             </p>
             <hr />
             {stock > 0 && <AddToCart />}
@@ -92,19 +101,17 @@ const Wrapper = styled.main`
     }
   }
   .price {
-    color: var(--clr-primary-5);
+    color: var(--red-900);
   }
-  .desc {
-    line-height: 2;
-    max-width: 45em;
-  }
+
   .info {
     text-transform: capitalize;
     width: 300px;
     display: grid;
     grid-template-columns: 125px 1fr;
     span {
-      font-weight: 700;
+      font-weight: 800;
+      letter-spacing: 0.05rem;
     }
   }
 
