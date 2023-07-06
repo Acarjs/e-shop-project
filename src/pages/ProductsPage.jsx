@@ -8,7 +8,7 @@ const ProductPage = () => {
     <main>
       <PageSection title="products" />
       <Wrapper className="page">
-        <div>
+        <div className="section-center products">
           <Filters />
           <div>
             <Sort />
@@ -20,6 +20,17 @@ const ProductPage = () => {
   )
 }
 
-const Wrapper = styled.section``
+const Wrapper = styled.section`
+  .products {
+    display: grid;
+    gap: 3rem 1.5rem;
+    margin: 4rem auto;
+  }
+  @media (min-width: 768px) {
+    .products {
+      grid-template-columns: 200px 1fr;
+    }
+  }
+`
 
 export default ProductPage
