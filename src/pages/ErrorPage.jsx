@@ -7,7 +7,7 @@ const ErrorPage = () => {
     <Wrapper className="page-100">
       <section>
         <h1>404</h1>
-        <h3>Page Cannot be Found</h3>
+        <h3>Page Cannot be Found </h3>
         <Link to="/" className="btn">
           BACK HOME PAGE
         </Link>

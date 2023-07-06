@@ -731,7 +731,8 @@
     "price": 9,
     "shipping": true,
     "featured": false,
-    "sizes": ["3M", "6M", "9m", "1Y", "2Y"]
+    "stock": 5,
+    "sizes": ["3M", "6M", "9M", "1Y", "2Y"]
   },
   "22": {
     "id": 22,

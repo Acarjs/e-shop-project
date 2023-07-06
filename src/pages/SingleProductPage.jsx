@@ -15,6 +15,7 @@ import {
 
 const SingleProductPage = () => {
   const { id } = useParams()
+  // console.log(useParams())
   const history = useHistory()
 
   const {
@@ -119,10 +120,6 @@ const Wrapper = styled.main`
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
-
-      .content {
-        margin-top: -8rem;
-      }
     }
 
     .price {
