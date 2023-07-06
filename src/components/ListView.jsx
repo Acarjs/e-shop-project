@@ -36,7 +36,6 @@ const Wrapper = styled.section`
   display: grid;
   row-gap: 3rem;
   padding: 1rem;
-  margin: auto;
 
   img {
     width: 100%;
