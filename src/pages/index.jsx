@@ -5,7 +5,7 @@ import Checkout from './CheckoutPage.jsx'
 import Error from './ErrorPage.jsx'
 import Home from './HomePage.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
-import Products from './ProductPage.jsx'
+import Products from './ProductsPage.jsx'
 import SingleProduct from './SingleProductPage.jsx'
 
 export {

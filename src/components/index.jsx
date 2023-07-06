@@ -11,6 +11,11 @@ import ProductImages from './ProductImages.jsx'
 import AddToCart from './AddToCart.jsx'
 import Stars from './Stars.jsx'
 import PageSection from './PageSection.jsx'
+import Sort from './Sort.jsx'
+import Filters from './Filters.jsx'
+import ProductList from './ProductList.jsx'
+import GridView from './GridView.jsx'
+import ListView from './ListView.jsx'
 
 export {
   Navbar,
@@ -26,4 +31,9 @@ export {
   AddToCart,
   Stars,
   PageSection,
+  Sort,
+  Filters,
+  ProductList,
+  GridView,
+  ListView,
 }
