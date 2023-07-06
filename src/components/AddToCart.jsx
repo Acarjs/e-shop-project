@@ -99,13 +99,13 @@ const Wrapper = styled.section`
     }
   }
 
-  .btn-container {
+  /* .btn-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-  }
+  } */
 `
 
 export default AddToCart
