@@ -113,6 +113,10 @@ const Wrapper = styled.section`
     font-weight: 700;
   }
 
+  .sort-input:focus {
+    outline-width: 0;
+  }
+
   label {
     font-size: 0.9rem;
     text-transform: capitalize;
