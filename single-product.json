@@ -171,7 +171,7 @@
     "price": 19,
     "shipping": true,
     "featured": false,
-    "stock": 15,
+    "stock": 12,
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   "6": {
@@ -308,7 +308,7 @@
         "fileName": "product-9-d"
       }
     ],
-    "price": 59,
+    "price": 44,
     "shipping": true,
     "featured": false,
     "stock": 5,
@@ -343,7 +343,7 @@
         "fileName": "product-10-d"
       }
     ],
-    "price": 59,
+    "price": 44,
     "shipping": true,
     "featured": false,
     "stock": 10,
@@ -705,7 +705,7 @@
     "brand": "Zara",
     "category": "Baby",
     "reviews": 7,
-    "stars": 4.9,
+    "stars": 4.7,
     "images": [
       {
         "id": "p21a",
