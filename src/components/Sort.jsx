@@ -112,6 +112,7 @@ const Wrapper = styled.section`
     padding: 0.25rem 0.5rem;
     font-weight: 700;
   }
+
   label {
     font-size: 0.9rem;
     text-transform: capitalize;

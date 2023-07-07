@@ -17,6 +17,15 @@ const initialState = {
   all_products: [],
   grid_view: true,
   sort: 'price-highest',
+  filters: {
+    text: '',
+    brand: 'all',
+    category: 'all',
+    minPrice: 0,
+    maxPrice: 0,
+    price: 0,
+    shipping: false,
+  },
 }
 
 const FilterContext = createContext()
@@ -48,9 +57,20 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: UPDATE_SORT, payload: value })
   }
 
+  const updateFilters = () => {}
+
+  const clearFilters = () => {}
+
   return (
     <FilterContext.Provider
-      value={{ ...state, setGridView, setListView, updateSort }}
+      value={{
+        ...state,
+        setGridView,
+        setListView,
+        updateSort,
+        updateFilters,
+        clearFilters,
+      }}
     >
       {children}
     </FilterContext.Provider>

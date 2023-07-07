@@ -28,7 +28,7 @@
         "fileName": "product-1-d"
       }
     ],
-    "price": 49,
+    "price": 54,
     "shipping": true,
     "featured": true,
     "stock": 15,
@@ -63,7 +63,7 @@
         "fileName": "product-2-d"
       }
     ],
-    "price": 49,
+    "price": 54,
     "shipping": true,
     "featured": true,
     "stock": 10,
@@ -98,7 +98,7 @@
         "fileName": "product-3-d"
       }
     ],
-    "price": 49,
+    "price": 54,
     "shipping": true,
     "featured": true,
     "stock": 15,
@@ -308,7 +308,7 @@
         "fileName": "product-9-d"
       }
     ],
-    "price": 59,
+    "price": 47,
     "shipping": true,
     "featured": false,
     "stock": 5,
@@ -343,7 +343,7 @@
         "fileName": "product-10-d"
       }
     ],
-    "price": 59,
+    "price": 49,
     "shipping": true,
     "featured": false,
     "stock": 10,
@@ -729,7 +729,7 @@
       }
     ],
     "price": 9,
-    "shipping": true,
+    "shipping": false,
     "featured": false,
     "stock": 5,
     "sizes": ["3M", "6M", "9M", "1Y", "2Y"]
@@ -764,7 +764,7 @@
       }
     ],
     "price": 9,
-    "shipping": true,
+    "shipping": false,
     "featured": false,
     "stock": 0,
     "sizes": ["3M", "6M", "9M", "1Y", "2Y"]

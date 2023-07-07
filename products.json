@@ -17,7 +17,7 @@
       "name": "MATCH BLACK SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-1-a_s.jpeg?alt=media&token=edbf4134-4e63-43ed-a8d3-40189acea434",
-      "price": 49,
+      "price": 54,
       "shipping": true,
       "featured": true
     },
@@ -26,7 +26,7 @@
       "name": "MATCH WHITE SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-2-a-s.jpeg?alt=media&token=571d7e77-9413-4277-9bc8-33591c760642",
-      "price": 49,
+      "price": 54,
       "shipping": true,
       "featured": true
     },
@@ -35,7 +35,7 @@
       "name": "MATCH RED SHIRT",
       "brand": "Adidas",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-3-a-s.jpeg?alt=media&token=ff60f7a5-449d-4848-baed-b4236923e6ce",
-      "price": 49,
+      "price": 54,
       "shipping": true,
       "featured": true
     },
@@ -84,7 +84,7 @@
       "name": "BESIKTAS BLACK TRACKSUIT",
       "brand": "Les Benjamins",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-9-a-s.jpeg?alt=media&token=29feaa72-302b-4020-b008-a0a14298d055",
-      "price": 59,
+      "price": 47,
       "shipping": true
     },
     {
@@ -92,7 +92,7 @@
       "name": "CASUAL BLACK JACKET",
       "brand": "Les Benjamins",
       "image": "https://firebasestorage.googleapis.com/v0/b/eshop-97209.appspot.com/o/product-10-a-s.jpeg?alt=media&token=6e31c051-7e00-47bd-9e42-99c046c746ae",
-      "price": 59,
+      "price": 49,
       "shipping": true
     },
     {
