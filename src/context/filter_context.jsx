@@ -16,6 +16,7 @@ const initialState = {
   filtered_products: [],
   all_products: [],
   grid_view: true,
+  sort: 'price-highest',
 }
 
 const FilterContext = createContext()
@@ -36,8 +37,17 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: SET_LISTVIEW })
   }
 
+  const updateSort = (e) => {
+    const name = e.target.name // it is <select name"sort"></select> from sort component,
+    const value = e.target.value // <option value="[whatever value is here]">price (highest)</option> from sort component,
+    console.log(name, value) // sort, price-highest
+    dispatch({ type: UPDATE_SORT, payload: value })
+  }
+
   return (
-    <FilterContext.Provider value={{ ...state, setGridView, setListView }}>
+    <FilterContext.Provider
+      value={{ ...state, setGridView, setListView, updateSort }}
+    >
       {children}
     </FilterContext.Provider>
   )
