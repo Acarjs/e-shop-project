@@ -29,6 +29,10 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: LOAD_PRODUCTS, payload: products })
   }, [products])
 
+  useEffect(() => {
+    dispatch({ type: SORT_PRODUCTS })
+  }, [products, state.sort])
+
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW })
   }
@@ -40,7 +44,7 @@ export const FilterProvider = ({ children }) => {
   const updateSort = (e) => {
     const name = e.target.name // it is <select name"sort"></select> from sort component,
     const value = e.target.value // <option value="[whatever value is here]">price (highest)</option> from sort component,
-    console.log(name, value) // sort, price-highest
+    // console.log(name, value) // sort, price-highest
     dispatch({ type: UPDATE_SORT, payload: value })
   }
 

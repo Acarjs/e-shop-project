@@ -39,6 +39,43 @@ const filter_reducer = (state, action) => {
     }
   }
 
+  if (action.type === SORT_PRODUCTS) {
+    const { sort, filtered_products } = state
+    let productsArray = [...filtered_products]
+
+    if (sort === 'price-lowest') {
+      productsArray = productsArray.sort(
+        (currentProduct, nextProduct) =>
+          currentProduct.price - nextProduct.price
+      )
+    }
+
+    if (sort === 'price-highest') {
+      productsArray = productsArray.sort(
+        (currentProduct, nextProduct) =>
+          nextProduct.price - currentProduct.price
+      )
+    }
+
+    if (sort === 'name-a-z') {
+      //localeCompare()
+      productsArray = productsArray.sort((currentProduct, nextProduct) => {
+        return currentProduct.name.localeCompare(nextProduct.name)
+      })
+    }
+
+    if (sort === 'name-z-a') {
+      //localeCompare()
+      productsArray = productsArray.sort((currentProduct, nextProduct) => {
+        return nextProduct.name.localeCompare(currentProduct.name)
+      })
+    }
+    return {
+      ...state,
+      filtered_products: productsArray,
+    }
+  }
+
   throw new Error(`No action matching with ${action.type}`)
 }
 
