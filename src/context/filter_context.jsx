@@ -61,7 +61,7 @@ export const FilterProvider = ({ children }) => {
   const updateFilters = (e) => {
     let name = e.target.name //name="searchInput"  in Filters.jsx
     let value = e.target.value // value={searchInput} in Filters.jsx
-    console.log(name)
+    // console.log(name)
 
     if (name === 'category') {
       value = e.target.textContent

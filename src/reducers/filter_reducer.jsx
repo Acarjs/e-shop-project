@@ -104,10 +104,33 @@ const filter_reducer = (state, action) => {
 
     let productsArray = [...all_products]
 
+    //searchInput filtering
     if (searchInput) {
       productsArray = productsArray.filter((product) => {
         return product.name.toLowerCase().indexOf(searchInput) !== -1
       })
+    }
+
+    //category filtering
+    if (category !== 'all') {
+      productsArray = productsArray.filter(
+        (product) => product.category === category
+      )
+    }
+
+    //brand filtering
+    if (brand !== 'all') {
+      productsArray = productsArray.filter((product) => product.brand === brand)
+    }
+
+    //price filtering
+    productsArray = productsArray.filter((product) => product.price <= price)
+
+    //shipping filtering
+    if (shipping) {
+      productsArray = productsArray.filter(
+        (product) => product.shipping === true
+      )
     }
 
     return { ...state, filtered_products: productsArray }
