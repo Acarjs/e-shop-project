@@ -59,8 +59,17 @@ export const FilterProvider = ({ children }) => {
   }
 
   const updateFilters = (e) => {
-    const name = e.target.name //name="searchInput"  in Filters.jsx
-    const value = e.target.value // value={searchInput} in Filters.jsx
+    let name = e.target.name //name="searchInput"  in Filters.jsx
+    let value = e.target.value // value={searchInput} in Filters.jsx
+    console.log(name)
+
+    if (name === 'category') {
+      value = e.target.textContent
+    }
+
+    if (name === 'price') {
+      value = +value
+    }
 
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } })
   }

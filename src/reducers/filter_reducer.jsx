@@ -13,7 +13,7 @@ const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
     let maxPrice = action.payload.map((item) => item.price)
     maxPrice = Math.max(...maxPrice)
-    console.log(maxPrice)
+    // console.log(maxPrice)
 
     return {
       ...state,
@@ -90,7 +90,7 @@ const filter_reducer = (state, action) => {
   }
 
   if (action.type === FILTER_PRODUCTS) {
-    console.log('filtering products')
+    // console.log('filtering products')
     return state
   }
 
