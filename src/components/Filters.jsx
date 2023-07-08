@@ -87,8 +87,24 @@ const Filters = () => {
               className="price-input"
             />
           </div>
-          {/* End ofPrice */}
+          {/* End of Price */}
+          {/* Shipping */}
+          <div className="form-control shipping">
+            <label htmlFor="shipping"> free shipping </label>
+            <input
+              type="checkbox"
+              name="shipping"
+              id="shipping"
+              onChange={updateFilters}
+              checked={shipping}
+            />
+          </div>
+
+          {/* End of Shipping */}
         </form>
+        <button type="button" className="clear-btn" onClick={clearFilters}>
+          clear filters
+        </button>
       </div>
     </Wrapper>
   )
@@ -159,6 +175,26 @@ const Wrapper = styled.section`
     margin-bottom: 0.25rem;
     font-size: 1.2rem;
     font-weight: 400;
+  }
+
+  .shipping {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    max-width: 150px;
+  }
+
+  .clear-btn {
+    background: var(--red-900);
+    color: var(--primary-100);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius);
+  }
+
+  .clear-btn:hover {
+    background: var(--red-800);
   }
 `
 
