@@ -90,8 +90,27 @@ const filter_reducer = (state, action) => {
   }
 
   if (action.type === FILTER_PRODUCTS) {
-    // console.log('filtering products')
-    return state
+    const { all_products } = state
+
+    const {
+      searchInput,
+      brand,
+      category,
+      minPrice,
+      maxPrice,
+      price,
+      shipping,
+    } = state.filters
+
+    let productsArray = [...all_products]
+
+    if (searchInput) {
+      productsArray = productsArray.filter((product) => {
+        return product.name.toLowerCase().indexOf(searchInput) !== -1
+      })
+    }
+
+    return { ...state, filtered_products: productsArray }
   }
 
   if (action.type === CLEAR_FILTERS) {
