@@ -7,6 +7,10 @@ import {
 } from '../actions'
 
 const cart_reducer = (action, state) => {
+  if (action.type === ADD_TO_CART) {
+    const { id, size, amount, product } = action.payload
+  }
+
   return state
 }
 

@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import AmountButtons from './AmountButtons.jsx'
 import { Link } from 'react-router-dom'
+import { useCartContext } from '../context/cart_context.jsx'
 
 const AddToCart = ({ product }) => {
+  const { addToCart } = useCartContext()
+
   const { id, stock, sizes } = product
 
   const [mainSize, setMainSize] = useState(sizes[0])
@@ -59,7 +62,11 @@ const AddToCart = ({ product }) => {
           increase={increase}
           decrease={decrease}
         />
-        <Link to="/cart" className="btn">
+        <Link
+          to="/cart"
+          className="btn"
+          onClick={() => addToCart(id, mainSize, amount, product)}
+        >
           add to cart
         </Link>
       </div>

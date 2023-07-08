@@ -17,11 +17,17 @@ const initialState = {
 
 const CartContext = createContext()
 
-export const cartProvider = ({ children }) => {
-  // const [state, dispatch] = useReducer(reducer, initialState)
+export const CartProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  const addToCart = (id, size, amount, product) => {
+    dispatch({ type: ADD_TO_CART, payload: id, size, amount, product })
+  }
 
   return (
-    <CartContext.Provider value={{ ...state }}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{ ...state, addToCart }}>
+      {children}
+    </CartContext.Provider>
   )
 }
 
