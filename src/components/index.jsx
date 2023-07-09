@@ -16,6 +16,10 @@ import Filters from './Filters.jsx'
 import ProductList from './ProductList.jsx'
 import GridView from './GridView.jsx'
 import ListView from './ListView.jsx'
+import CartColumns from './CartColumns.jsx'
+import CartContent from './CartContent.jsx'
+import CartItem from './CartItem.jsx'
+import CartTotals from './CartTotals.jsx'
 
 export {
   Navbar,
@@ -36,4 +40,8 @@ export {
   ProductList,
   GridView,
   ListView,
+  CartColumns,
+  CartContent,
+  CartItem,
+  CartTotals,
 }
