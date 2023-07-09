@@ -41,18 +41,23 @@ const Wrapper = styled.section`
   }
   .link-btn {
     background: transparent;
+    background: var(--primary-600);
     border-color: transparent;
+    color: var(--primary-0);
     text-transform: capitalize;
     padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
-    color: var(--clr-white);
     border-radius: var(--radius);
     letter-spacing: var(--spacing);
     font-weight: 400;
     cursor: pointer;
   }
   .clear-btn {
-    background: var(--clr-black);
+    background: var(--red-800);
+    color: var(--primary-0);
+  }
+
+  .clear-btn:hover {
+    background: var(--red-600);
   }
 `
 
