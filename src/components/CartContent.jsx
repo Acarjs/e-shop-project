@@ -54,6 +54,7 @@ const Wrapper = styled.section`
   .clear-btn {
     background: var(--red-800);
     color: var(--primary-0);
+    font-weight: 600;
   }
 
   .clear-btn:hover {
