@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import { FaUserCheck, FaUserTimes, FaShoppingCart } from 'react-icons/fa'
 import { useProductsContext } from '../context/product_context'
 import { Link } from 'react-router-dom'
+import { useCartContext } from '../context/cart_context'
 
 const CartButtons = () => {
   const data = useProductsContext()
+  const { totalItems } = useCartContext()
 
   const { closeSidebar } = data
 
@@ -15,7 +17,7 @@ const CartButtons = () => {
         Cart
         <span className="cart-container">
           <FaShoppingCart />
-          <span className="cart-value">10</span>
+          <span className="cart-value">{totalItems}</span>
         </span>
       </Link>
       <button type="button" className="login-btn">

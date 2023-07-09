@@ -7,7 +7,7 @@ import {
 } from '../actions'
 
 const cart_reducer = (state, action) => {
-  if (action.type === ADD_TO_CART) {
+  if (action.type == ADD_TO_CART) {
     const { id, size, amount, product } = action.payload
 
     const currentItem = state.cart.find((item) => {
@@ -43,7 +43,7 @@ const cart_reducer = (state, action) => {
     }
   }
 
-  if (action.type === REMOVE_CART_ITEM) {
+  if (action.type == REMOVE_CART_ITEM) {
     const currentCart = state.cart.filter((item) => item.id !== action.payload)
 
     return { ...state, cart: currentCart }
@@ -53,7 +53,7 @@ const cart_reducer = (state, action) => {
     return { ...state, cart: [] }
   }
 
-  if ((action.type = TOGGLE_CART_ITEM_AMOUNT)) {
+  if (action.type == TOGGLE_CART_ITEM_AMOUNT) {
     const { id, value } = action.payload
 
     const currentCart = state.cart.map((item) => {
@@ -79,6 +79,24 @@ const cart_reducer = (state, action) => {
 
     return { ...state, cart: currentCart }
   }
+
+  if (action.type == COUNT_CART_TOTALS) {
+    const { totalItems, totalAmount } = state.cart.reduce(
+      (total, cartItem) => {
+        const { amount, price } = cartItem
+        total.totalItems += amount
+        total.totalAmount += price * amount
+        return total
+      },
+      {
+        totalItems: 0,
+        totalAmount: 0,
+      }
+    )
+    return { ...state, totalItems, totalAmount }
+  }
+
+  throw new Error(`no matching ${action.type}`)
 }
 
 export default cart_reducer
