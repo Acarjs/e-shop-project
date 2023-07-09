@@ -72,7 +72,11 @@ const SingleProductPage = () => {
             <h5 className="price">€{price}</h5>
             <p className="info">
               <span> Availability : </span>
-              {stock > 0 ? 'In Stock' : 'Out of Stock'}
+              {stock > 0 ? (
+                'In Stock'
+              ) : (
+                <span className="no-stock">Out of Stock</span>
+              )}
             </p>
             <p className="info">
               <span> Brand : </span>
@@ -106,13 +110,17 @@ const Wrapper = styled.main`
   }
 
   .info {
-    text-transform: capitalize;
+    text-transform: none;
+
     width: 300px;
     display: grid;
     grid-template-columns: 125px 1fr;
     span {
       font-weight: 800;
       letter-spacing: 0.05rem;
+    }
+    .no-stock {
+      color: red;
     }
   }
 
