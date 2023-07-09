@@ -52,6 +52,33 @@ const cart_reducer = (state, action) => {
   if (action.type === CLEAR_CART) {
     return { ...state, cart: [] }
   }
+
+  if ((action.type = TOGGLE_CART_ITEM_AMOUNT)) {
+    const { id, value } = action.payload
+
+    const currentCart = state.cart.map((item) => {
+      if (item.id === id) {
+        if (value === 'increase') {
+          let newAmount = item.amount + 1
+          if (newAmount > item.max) {
+            newAmount = item.max
+          }
+          return { ...item, amount: newAmount }
+        }
+        if (value === 'decrease') {
+          let newAmount = item.amount - 1
+          if (newAmount < 1) {
+            newAmount = 1
+          }
+          return { ...item, amount: newAmount }
+        }
+      } else {
+        return item
+      }
+    })
+
+    return { ...state, cart: currentCart }
+  }
 }
 
 export default cart_reducer
