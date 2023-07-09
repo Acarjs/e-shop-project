@@ -48,6 +48,7 @@ const Wrapper = styled.section`
   }
   p {
     text-transform: capitalize;
+    font-weight: 500;
   }
   h4 {
     margin-top: 2rem;
