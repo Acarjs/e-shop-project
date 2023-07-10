@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom/'
 import Footer from './Footer'
 import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/product_context'
+import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
   const data = useProductsContext()
+  const { myUser } = useUserContext()
 
   const { isSidebarOpen, closeSidebar } = data
 
@@ -35,11 +37,13 @@ const Sidebar = () => {
               </li>
             )
           })}
-          <li>
-            <Link to="/checkout" onClick={closeSidebar}>
-              checkout
-            </Link>
-          </li>
+          {myUser && (
+            <li>
+              <Link to="/checkout" onClick={closeSidebar}>
+                checkout
+              </Link>
+            </li>
+          )}
         </ul>
         <CartButtons />
         <Footer />
