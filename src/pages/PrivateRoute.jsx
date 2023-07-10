@@ -1,7 +1,17 @@
 import React from 'react'
+import { Route, Redirect } from 'react-router-dom'
+import { useUserContext } from '../context/user_context'
 
-const PrivateRoute = () => {
-  return <h4>private route</h4>
+const PrivateRoute = ({ children, ...rest }) => {
+  const { myUser } = useUserContext()
+  return (
+    <Route
+      {...rest} // exact path="/checkout"
+      render={() => {
+        return myUser ? children : <Redirect to="/" />
+      }}
+    ></Route>
+  )
 }
 
 export default PrivateRoute
