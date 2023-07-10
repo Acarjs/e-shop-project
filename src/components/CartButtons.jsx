@@ -1,15 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaUserCheck, FaUserTimes, FaShoppingCart } from 'react-icons/fa'
+import { BiSolidUserPlus } from 'react-icons/bi'
 import { useProductsContext } from '../context/product_context'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../context/cart_context'
+import { useUserContext } from '../context/user_context'
 
 const CartButtons = () => {
   const data = useProductsContext()
+  const { closeSidebar } = data
   const { totalItems } = useCartContext()
 
-  const { closeSidebar } = data
+  const { loginWithRedirect, myUser, logout } = useUserContext()
 
   return (
     <Wrapper className="cart-btn-wrapper">
@@ -20,9 +23,20 @@ const CartButtons = () => {
           <span className="cart-value">{totalItems}</span>
         </span>
       </Link>
-      <button type="button" className="login-btn">
-        Login <FaUserCheck />
-      </button>
+
+      {myUser ? (
+        <button
+          type="button"
+          className="log-btn logout"
+          onClick={() => logout({ returnTo: window.location.origin })}
+        >
+          Logout <FaUserTimes />
+        </button>
+      ) : (
+        <button type="button" className="log-btn" onClick={loginWithRedirect}>
+          Login <BiSolidUserPlus />
+        </button>
+      )}
     </Wrapper>
   )
 }
@@ -68,18 +82,21 @@ const Wrapper = styled.div`
     padding: 11px;
   }
 
-  .login-btn {
+  .log-btn {
     cursor: pointer;
     display: flex;
     align-items: center;
     font-weight: 700;
     justify-content: center;
-    gap: 5px;
+    gap: 3px;
     background: transparent;
     border-color: transparent;
     font-size: 1.2rem;
     color: var(--primary-999);
     letter-spacing: var(--spacing);
+    svg {
+      font-size: 1.5rem;
+    }
   }
 `
 
